@@ -1,3 +1,8 @@
+.roomContainer * {
+  border: 1px red solid;
+}
+
+
 .roomContainer {
   text-align: center;
   display: flex;

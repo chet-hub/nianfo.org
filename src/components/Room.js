@@ -1,16 +1,30 @@
 
-import './RoomBlocks.css'
+import './Room.css'
 
-function RoomBlock({src,desc,name}) {
+function Room({name}) {
     return (
-      <div className="roomBlock">
-         <img src={src}></img>
-         <div className="roomBlockDesc">{desc}</div>
-         <div className="roomBlockName">{name}</div>
+      <div className="room">
+         {name}
       </div>
     );
   }
 
-  export default ({data})=><div className="roomBlockContainer">
-    {data.map(v=><RoomBlock {...v}/>)}
+  const data = [
+    {name:"xxxxx"},
+    {name:"yyyyyy"},
+    {name:"xxxxxx"},
+    {name:"xxxxx"},
+    {name:"yyyyyy"},
+    {name:"xxxxxx"},
+    {name:"xxxxx"},
+    {name:"yyyyyy"},
+    {name:"xxxxxx"},
+    {name:"xxxxx"},
+    {name:"yyyyyy"},
+    {name:"xxxxxx"},
+  ]
+
+
+  export default ()=><div className="roomContainer">
+    {data.map(v=><Room {...v}/>)}
   </div>;

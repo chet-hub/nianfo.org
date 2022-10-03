@@ -1,6 +1,7 @@
 import './App.css';
 import RoomBlocks from './components/RoomBlocks'
 import Welcome from './components/Welcome'
+import Room from './components/Room'
 
 //px.jpg  sjml.jpg  wssl.jpg
 
@@ -44,6 +45,7 @@ function App() {
     <div className="App">
       <Welcome />
       <RoomBlocks data={roomBlocks}></RoomBlocks>
+      <Room />
     </div>
   );
 }
