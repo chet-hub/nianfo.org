@@ -1,3 +1,6 @@
+
+import './RoomBlocks.css'
+
 function RoomBlock({src,desc,name}) {
     return (
       <div className="roomBlock">
@@ -8,4 +11,6 @@ function RoomBlock({src,desc,name}) {
     );
   }
 
-  export default RoomBlock;
+  export default ({data})=><div className="roomBlockContainer">
+    {data.map(v=><RoomBlock {...v}/>)}
+  </div>;

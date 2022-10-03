@@ -1,0 +1,54 @@
+.roomBlockContainer {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.roomBlock {
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 3%;
+}
+
+.roomBlock img {
+  width: 100%;
+  border-radius: 3%;
+}
+
+.roomBlock .roomBlockDesc{
+  color: #b3b3b3;
+  font-size:14px;
+  margin-top: 15px;
+}
+
+.roomBlock .roomBlockName{
+  color: black;
+  font-size:24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 576px) {
+  .App {
+    padding: 0;
+  }
+  .roomBlock {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .App {
+    padding: 0;
+  }
+  .roomBlock {
+    width: 27%;
+  }
+}

@@ -1,65 +1,13 @@
 * {
-  border: 1px red solid;
+  border: 0px red solid;
 }
 
 body {
-  background-color: #2f2f2f;
+  /* background-image: url('../public/background.jpg'); */
+  /* background-color: yellow; */
 }
 
 .App {
 
 }
 
-.roomBlockContainer {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  max-width: 1200px;
-  margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.roomBlock {
-  /* min-width: 480px; */
-  padding: 20px;
-  background-color: white;
-  margin-bottom: 30px;
-}
-
-.roomBlock img {
-  width: 100%;
-}
-
-.roomBlock .roomBlockDesc{
-  color: #b3b3b3;
-  font-size:14px;
-  margin-top: 15px;
-}
-
-.roomBlock .roomBlockName{
-  color: black;
-  font-size:24px;
-  font-weight: 600;
-  line-height: 28.8px;
-  margin-top: 15px;
-}
-
-@media only screen and (min-width: 576px) {
-  .App {
-    padding: 0;
-  }
-  .roomBlock {
-    width: 40%;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  .App {
-    padding: 0;
-  }
-  .roomBlock {
-    width: 27%;
-  }
-}
