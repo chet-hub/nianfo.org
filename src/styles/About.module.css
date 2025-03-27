@@ -1,0 +1,39 @@
+.aboutContainer {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
+  }
+  
+  .aboutHeader {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .aboutTitle {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .aboutSubtitle {
+    color: rgba(51, 51, 51, 0.7);
+  }
+  
+  .aboutContent {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .aboutText {
+    flex: 1;
+  }
+  
+  .aboutImage {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .aboutContent {
+      flex-direction: column;
+    }
+  }

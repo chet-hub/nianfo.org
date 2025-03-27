@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--deep-gray);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footerSection {
+    flex: 1;
+  }
+  
+  .footerSection h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footerCopyright {
+    margin-top: 30px;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }

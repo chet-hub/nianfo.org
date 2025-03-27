@@ -1,0 +1,33 @@
+.orderContainer {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 0 20px;
+  }
+  
+  .orderTitle {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .orderForm {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+  }

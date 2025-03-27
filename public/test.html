@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>高端定制 | 纯手工艺术蛋糕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ivory-white: #f5f3f0;
+            --soft-gold: #d4af37;
+            --deep-gray: #333333;
+            --light-gray: #f0f0f0;
+        }
+
+        body {
+            font-family: 'Noto Sans', 'Avenir', sans-serif;
+            background-color: var(--ivory-white);
+            color: var(--deep-gray);
+            line-height: 1.6;
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .navbar-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--deep-gray);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--deep-gray);
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--soft-gold);
+        }
+
+        /* 主视觉区域 */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(
+                rgba(245, 243, 240, 0.8), 
+                rgba(245, 243, 240, 0.8)
+            ), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0 0 L100 0 L0 100 Z" fill="%23e0e0e0" fill-opacity="0.1"/></svg>');
+        }
+
+        .hero-content {
+            max-width: 700px;
+            padding: 0 20px;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--deep-gray);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: rgba(51, 51, 51, 0.7);
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            text-decoration: none;
+            border: 2px solid var(--deep-gray);
+            color: var(--deep-gray);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--deep-gray);
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: var(--deep-gray);
+            color: white;
+        }
+
+        /* 作品展示 */
+        .gallery {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .gallery-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .gallery-item {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">念否</div>
+            <div class="nav-links">
+                <a href="#">首页</a>
+                <a href="#">作品</a>
+                <a href="#">订购</a>
+                <a href="#">关于</a>
+                <a href="#">联系</a>
+                <a href="#">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">一念之间，甜蜜永存</h1>
+            <p class="hero-subtitle">法式匠心 · 日式静美</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn">探索作品</a>
+                <a href="#" class="btn btn-primary">预约订购</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <h2 class="gallery-title">精选作品</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/api/placeholder/350/350" alt="婚礼蛋糕">
+                <h3>浪漫婚礼蛋糕</h3>
+                <p>日法融合，纯手工制作</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/350/350" alt="生日蛋糕">
+                <h3>生日定制</h3>
+                <p>每一个都是独一无二</p>
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/350/350" alt="法式甜点">
+                <h3>法式甜点</h3>
+                <p>细腻工艺，优雅滋味</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
