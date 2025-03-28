@@ -26,7 +26,7 @@ export default function About() {
           </div>
           <div className={styles.aboutImage}>
             <Image 
-              src="/images/1.jpg" 
+              src="/images/youth_and_eternity_2.webp" 
               alt="念否工坊工作室" 
               width={600} 
               height={400} 
